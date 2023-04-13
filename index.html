@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- TODO: 0. incluir la cabecera  de la pagina  -->
 <head>
+    <!-- TODO: 1. incluir los meta de la pagina , charset, viewport+ content -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: 2. incluir el titulo de la pagina  -->
     <title>Primera pagina</title>
     <style>
         body {
@@ -30,12 +32,16 @@
         }
     </style>
 </head>
-
+<!-- TODO: 3. incluir el cuerpo de la pagina  -->
 <body>
+    <!-- TODO: 4. incluir la etiqueta principal de la pagina  -->
     <header>
-        <h1>Hola me llamo <a href="https://google.com.pe">Jesús Cruz Monroy</a>, pero me dicen Robin</h1>
+        <!-- TODO: 5. incluir la etiqueta para el titulo con mi nombre y edad (h1)  -->
+        <h1>Hola me llamo <a href="https://google.com.pe">Jesús Cruz Monroy</a>, pero me dicen Robin y tengo 47 años</h1>
     </header>
+    <!-- TODO: 6. incluir la etiqueta para el texto con mi hobby  -->
     <main>
+        <!-- TODO: 7. incluir la etiqueta para el texto con una descripciopn mia, mis hobbies y mi ocupacion actual  -->
         <section>
             <h2>Una breve descripción...</h2>
             <!--Descripcion inicial cortal-->
@@ -48,45 +54,65 @@
             </p>
             <!--Fin de la descripcion inicial-->
         </section>
+        <!-- TODO: 8. incluir la etiqueta para encapsular una imagen y su leyenda -->
+        <!-- TODO: 9. incluir la etiqueta para la imagen de mi preferencia  -->
         <picture>
             <legend>Cementos Pacasmayo</legend>
+            <!-- TODO: 10. incluir la etiqueta para la descripción de la imagen y 
+								dentro de esta incluir la etiqueta para mostrar un link,
+								incluir los atributos para la url de la pagina, 
+								y el texto descriptivo de la imagen	-->
             <img src="https://gestion.pe/resizer/19wL6cB9b9vGm8dSVv9aDKHm7SU=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/X2RZYCPC5JGCFMCXX23IP5TCIE.jpeg"
-                alt="Cargando..." width="30%">
+                alt="Foto de la planta Piura" width="30%">
         </picture>
+        <!-- TODO: 11. incluir la etiqueta para un titulo (h3), que tenga de texto, Lista de deportes o videojuegos favoritos, hobbies -->
         <section>
-            <h2>Mis Hobbies</h2>
+            <h3>Mis Hobbies</h3>
             <p>Me gusta escuchar diversos generos musicales:
-            <ol>
+            <!-- TODO: 12. incluir la etiqueta  para mostrar listas desordenadas -->
+            <ul>
+                <!-- TODO: 13. incluir la etiquetas para  mostrar  4 elementos -->
                 <li><a href="">Rock</a></li>
                 <li><a href="">Cumbia</a></li>
                 <li><a href="">Salsa</a></li>
                 <li><a href="">Etc..</a></li>
-            </ol>
+            </ul>
             </p>
-            <p>También me gusta el cine, los viajes,
-
+            <p>También me gusta el cine, los viajes
             </p>
         </section>
+        <!-- TODO: 14. incluir la etiqueta para mostrar otra seccion -->
         <section>
-            <form action="https://www.mibackend/servicio">
-                <h2>Contactame</h2>
+            <!-- TODO: 15. incluir la etiqueta para mostrar para mostrar un titulo(h2) , que contenga el texto Contactarme-->
+            <h2>Contactame</h2>
+            <!-- TODO: 16. incluir la etiqueta para  mostrar un formulario con si atributo action -->
+            <form action="https://www.mibackend/servicio">                
                 <fieldset>
-                    <label for="nombres">Nombres</label>
+                    <!-- TODO: 17. incluir la etiqueta para mostrar para mostrar una seccion  que tenga inputs relacionados-->
+                    <!-- TODO: 19. incluir la etiqueta para mostrar un label con el texto nombres-->
+                    <label for="nombres">Nombres</label>                    
+                    <!-- TODO: 18. incluir la etiquetan para mostrar para mostrar la legenda del campo del input, que contenga el texto Info de contacto -->
                     <input type="text" id="nombres" placeholder="Ingrese su nombre">
                     <label for="apellidos">Apellidos</label>
                     <input type="text" id="apellidos" placeholder="Ingrese su apellido">
                 </fieldset>
                 <fieldset>
+                    <!-- TODO: 24. incluir la etiqueta para mostrar un label para comentarios , con el texto comentarios-->
                     <h3>Comentarios</h3>
-                    <textarea name="comentarios" title="comentarios" rows="5" cols="50" placeholder="Escribe aquí tus comentarios..."></textarea>
+                    <!-- TODO: 25. incluir la etiqueta para mostrar un textarea , con id comentarios, nombre, comentarios, filas y columnas en cant 4 , y de texto inicial , comentario generico -->
+                    <textarea name="comentarios" title="comentarios" rows="4" cols="4" placeholder="Comentario generico.."></textarea>
                     <br>
+                    <!-- TODO: 22. incluir la etiqueta para mostrar un boton de tipo submit y con el texto Enviar -->
                     <button type="submit" id="enviar">Enviar</button>
                 </fieldset>
             </form>
         </section>
     </main>
+    <!-- TODO: 26. incluir la etiqueta para mostrar un footer -->
     <footer>
-        <p>Todos los derechos reservados</p>
-        <p>Creado por CodiGo</p>
+        <!-- TODO: 27. incluir la etiqueta para mostrar un texto , que contemga  No Copyright - -->
+        <p>No Copyright, todos los derechos reservados</p>
+        <!-- TODO: 28. dentro de la anterior etiqueta, incluir la etiqueta para mostrar un hipervinculo , que rediriga a la web de codigo  y que contenga un texto que diga Codigo-->
+        <p>Creado por <a href="https://codigo.edu.pe">CodiGo</a></p>
     </footer>
 </html>
